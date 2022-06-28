@@ -94,12 +94,12 @@ namespace ConsoleApplication19
             double b = 0;
             double err = 0; // Оценка погрешности
 
-            det = sumXX * 10 - sumX * sumX;
+            det = sumXX * n - sumX * sumX;
 
-            a = (sumXY * 10 - sumY * sumX) / det;
+            a = (sumXY * n - sumY * sumX) / det;
             b = (sumXX * sumY - sumXY * sumX) / det;
 
-            for (i = 0; i < 10; i++)
+            for (i = 0; i < n; i++)
             {
                 err += Math.Pow((yCoordinates[i] - (a * xCoordinates[i] + b)), 2);
             }
