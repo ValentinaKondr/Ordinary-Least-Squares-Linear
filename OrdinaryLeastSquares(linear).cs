@@ -107,7 +107,7 @@ namespace ConsoleApplication19
             if (b > 0)
                 Console.WriteLine("Полученное уравнение: y={0:f4}x+{1:f4}", a, b);
             else
-                Console.WriteLine("Полученное уравнение: y={0:f4}x{1:f4}", a, b);
+                Console.WriteLine("Полученное уравнение: y={0:f4}x-{1:f4}", a, b);
             Console.WriteLine("Сумма квадрата погрешностей: {0}", err);
             Console.Read();
         }
